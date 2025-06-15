@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 
 * {
@@ -12,10 +12,15 @@
 
 :root {
     --font: "Alumni Sans SC", sans-serif;
+    --font-two: "Roboto", sans-serif;
     --bg-primary: rgb(54, 54, 196);
     --clr-black: #111111;
     --clr-grey: #888888;
     --clr-grey2: #d3d3d3;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* Seccion Header */
@@ -45,7 +50,7 @@ header nav ul li a:hover {
 }
 
 .logo-page {
-    width: 120px;
+    width: 100px;
 }
 
 /* Seccion Inicio de sesion */
@@ -152,236 +157,95 @@ header nav ul li a:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Seccion Main */
+
+/* .conteiner-main{
+
+} */
+
+.box-imgs {
+    background-color: var(--clr-black);
+    display: flex;
+
+    .img-one {
+        width: 100%;
+    }
+}
+
+.flex-main {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+        font-size: 4rem;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+
+    .btn {
+        width: max-content;
+        padding: 1rem 3rem;
+        margin: 2.6rem 0;
+    }
+}
+
+
+.p {
+    font-family: var(--font-two);
+    text-align: center;
+}
+
+.span {
+    font-family: var(--font-two);
+    color: var(--bg-primary);
+}
+
+/* Seccion Categoria */
+
+.sections-page {
+    background-color: #111111;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 1rem;
+    position: relative;
+
+    div {
+        background-color: rgb(84, 50, 205);
+        height: 30rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+
+    .hombre {
+        background-image: url(./images/hombre.png);
+        width: 100%;
+        position: relative;
+    }
+
+    .mujer {
+        background-image: url(./images/mujer.png);
+        width: 100%;
+        position: relative;
+    }
+
+    .boy-girl {
+        background-image: url(./images/boy-girl.png);
+        width: 100%;
+    }
+
+    .btn {
+        position: absolute;
+        width: max-content;
+        bottom: 2rem;
+        margin-left: 2rem;
+        padding: .6rem 2.4rem;
+    }
+
+
+}
 
 
 
@@ -427,10 +291,14 @@ footer p {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 512px) {
+@media (max-width: 800px) {
 
+    header {
+        padding: 1rem 0;
+    }
 
     /* HEADER HOME */
+
 
     header nav ul li a {
         display: none;
@@ -449,6 +317,46 @@ footer p {
     .conteiner form input {
         width: 100%;
     }
+
+
+    /* Seccion Main  */
+
+    .box-imgs {
+        .img-one {
+            display: none;
+        }
+
+        .img-mobile {
+            background-image: url(./images/img-mobile.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 30rem;
+            width: 100%;
+        }
+    }
+
+
+
+    .flex-main {
+
+        .btn {
+            padding: .8rem 2.2rem;
+        }
+
+    }
+
+    /* Seccion Categoria */
+
+    .sections-page {
+
+        grid-template-columns: repeat(1, 2fr);
+
+        div {
+            height: 20rem;
+        }
+
+    }
+
 
     /* Seccion footer */
 
