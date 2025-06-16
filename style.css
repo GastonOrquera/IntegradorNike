@@ -214,10 +214,9 @@ header nav ul li a:hover {
     grid-template-columns: repeat(3, 2fr);
     gap: .6rem;
     position: relative;
-    background-image: url(https://us.123rf.com/450wm/karloni/karloni2002/karloni200200117/140901328-chaotic-abstract-white-stripes-on-a-black-background-design-element-for-prints-web-pages-template.jpg);
+    background-image: url(https://img.freepik.com/vector-premium/fondo-diseno-tecnologico-datos-futuros-digitales_250879-161.jpg);
     background-size: contain;
     width: 100%;
-    padding: .2rem;
 
     div {
         background-color: rgb(84, 50, 205);
