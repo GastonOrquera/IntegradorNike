@@ -212,8 +212,12 @@ header nav ul li a:hover {
     background-color: #111111;
     display: grid;
     grid-template-columns: repeat(3, 2fr);
-    gap: 1rem;
+    gap: .6rem;
     position: relative;
+    background-image: url(https://us.123rf.com/450wm/karloni/karloni2002/karloni200200117/140901328-chaotic-abstract-white-stripes-on-a-black-background-design-element-for-prints-web-pages-template.jpg);
+    background-size: contain;
+    width: 100%;
+    padding: .2rem;
 
     div {
         background-color: rgb(84, 50, 205);
@@ -297,7 +301,7 @@ footer p {
 
 @media (max-width: 1300px) {
     .sections-page {
-        grid-template-columns: repeat(1, 4fr);
+        grid-template-columns: repeat(1, 2fr);
 
         div {
             background-size: 100%;
@@ -379,6 +383,7 @@ footer p {
 
         .btn {
             padding: .8rem 2.2rem;
+            margin: 1rem;
         }
 
     }
