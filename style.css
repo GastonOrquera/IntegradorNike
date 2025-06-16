@@ -177,7 +177,6 @@ header nav ul li a:hover {
 }
 
 .flex-main {
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -195,7 +194,6 @@ header nav ul li a:hover {
     }
 }
 
-
 .p {
     font-family: var(--font-two);
     text-align: center;
@@ -209,14 +207,12 @@ header nav ul li a:hover {
 /* Seccion Categoria */
 
 .sections-page {
-    background-color: #111111;
     display: grid;
     grid-template-columns: repeat(3, 2fr);
     gap: .6rem;
     position: relative;
-    background-image: url(https://img.freepik.com/vector-premium/fondo-diseno-tecnologico-datos-futuros-digitales_250879-161.jpg);
+    background-image: url(./images/bg-categorias.png);
     background-size: contain;
-    width: 100%;
 
     div {
         background-color: rgb(84, 50, 205);
@@ -224,7 +220,6 @@ header nav ul li a:hover {
         background-size: cover;
         background-repeat: no-repeat;
     }
-
 
     .hombre {
         background-image: url(./images/hombre.png);
@@ -250,19 +245,75 @@ header nav ul li a:hover {
         margin-left: 2rem;
         padding: .6rem 2.4rem;
     }
-
-
 }
 
+/* Seccion productos */
 
+.section-products {
+    padding: 2rem;
 
+    h2 {
+        font-size: 2.4rem;
+        font-family: var(--font);
+        margin: 2rem 0;
+    }
 
+    .conteiner-cards {
+        display: grid;
+        grid-template-columns: repeat(4, 2fr);
+        gap: .6rem;
+    }
 
+    .box-img {
+        background-color: yellow;
+    }
 
+    .card {
+        width: max-content;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+    }
 
+    a {
+        color: var(--clr-black);
+    }
 
+    .flex-shoes {
+        border: 1px solid rgba(54, 54, 196, 0.397);
+        padding: .4rem .8rem;
+        display: flex;
+        flex-direction: column;
+    }
 
+    .btn {
+        margin-top: .6rem;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 0;
+        margin-bottom: .6rem;
+        color: white;
+    }
 
+    .shoes {
+        width: 100%;
+        height: 100%;
+    }
+
+    span {
+        color: var(--bg-primary);
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+}
 
 /* Seccion footer */
 
@@ -295,7 +346,6 @@ footer p {
     letter-spacing: 1px;
 }
 
-
 /* MEDIA QUERIES */
 
 @media (max-width: 1300px) {
@@ -307,6 +357,14 @@ footer p {
             height: 24rem;
         }
     }
+
+    .section-products {
+
+        .conteiner-cards {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+    }
 }
 
 @media (max-width: 800px) {
@@ -316,7 +374,6 @@ footer p {
     }
 
     /* HEADER HOME */
-
 
     header nav ul li a {
         display: none;
@@ -335,7 +392,6 @@ footer p {
     .conteiner form input {
         width: 100%;
     }
-
 
     /* Seccion Main  */
 
@@ -376,29 +432,35 @@ footer p {
         }
     }
 
-
-
     .flex-main {
-
         .btn {
             padding: .8rem 2.2rem;
             margin: 1rem;
         }
-
     }
 
     /* Seccion Categoria */
 
     .sections-page {
-
         grid-template-columns: repeat(1, 2fr);
 
         div {
             height: 20rem;
         }
-
     }
 
+    .section-products {
+
+        padding: 1rem;
+
+        .conteiner-cards {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        h3 {
+            font-size: 1.4rem;
+        }
+    }
 
     /* Seccion footer */
 
