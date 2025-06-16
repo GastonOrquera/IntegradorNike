@@ -264,10 +264,6 @@ header nav ul li a:hover {
         gap: .6rem;
     }
 
-    .box-img {
-        background-color: yellow;
-    }
-
     .card {
         width: max-content;
         display: flex;
@@ -456,6 +452,8 @@ footer p {
         .conteiner-cards {
             grid-template-columns: repeat(2, 1fr);
         }
+
+
 
         h3 {
             font-size: 1.4rem;
