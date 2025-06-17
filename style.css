@@ -281,6 +281,8 @@ header nav ul li a:hover {
         padding: .4rem .8rem;
         display: flex;
         flex-direction: column;
+        border-bottom-right-radius: .6rem;
+        border-top-left-radius: .6rem;
     }
 
     .btn {
