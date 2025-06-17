@@ -282,7 +282,6 @@ header nav ul li a:hover {
         display: flex;
         flex-direction: column;
         border-bottom-right-radius: .6rem;
-        border-top-left-radius: .6rem;
     }
 
     .btn {
@@ -296,6 +295,9 @@ header nav ul li a:hover {
     .shoes {
         width: 100%;
         height: 100%;
+        border: 1px solid #11111144;
+        border-top-left-radius: .6rem;
+        border-bottom: none;
     }
 
     span {
@@ -468,9 +470,9 @@ footer p {
 
         img {
             height: 16rem;
-            border: 1px solid #1111111f;
-            border-bottom: none;
         }
+
+
 
 
         h3 {
