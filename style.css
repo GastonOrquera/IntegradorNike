@@ -230,13 +230,11 @@ header nav ul li a:hover {
 
     .hombre {
         background-image: url(./images/hombre.png);
-
         position: relative;
     }
 
     .mujer {
         background-image: url(./images/mujer.png);
-
         position: relative;
     }
 
@@ -375,6 +373,8 @@ footer p {
     }
 
     .section-products {
+
+        padding: 1rem;
 
         .conteiner-cards {
             grid-template-columns: repeat(3, 1fr);
