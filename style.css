@@ -460,6 +460,7 @@ footer p {
 
         padding: 1rem;
 
+
         .conteiner-cards {
             grid-template-columns: repeat(1, 1fr);
         }
@@ -467,6 +468,8 @@ footer p {
 
         img {
             height: 16rem;
+            border: 1px solid #1111111f;
+            border-bottom: none;
         }
 
 
