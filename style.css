@@ -203,6 +203,7 @@ header nav ul li a:hover {
 .p {
     font-family: var(--font-two);
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 .span {
@@ -229,19 +230,19 @@ header nav ul li a:hover {
 
     .hombre {
         background-image: url(./images/hombre.png);
-        width: 100%;
+
         position: relative;
     }
 
     .mujer {
         background-image: url(./images/mujer.png);
-        width: 100%;
+
         position: relative;
     }
 
     .boy-girl {
         background-image: url(./images/boy-girl.png);
-        width: 100%;
+
     }
 
     .btn {
