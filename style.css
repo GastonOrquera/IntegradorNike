@@ -33,18 +33,33 @@ header {
     padding: 2rem;
 }
 
+header .box {
+    display: flex;
+}
+
+.cart-mobile {
+    margin-right: 2rem;
+    position: relative;
+}
+
 header nav ul {
     display: flex;
     gap: 2rem;
 }
 
-header nav ul li a {
+header nav ul li a,
+.cart-mobile {
     color: rgb(240, 240, 240);
     font-size: 1.4rem;
     font-weight: 300;
 }
 
 header nav ul li a:hover {
+    transition: .2s ease-in;
+    color: #d3d3d3;
+}
+
+.cart-mobile:hover {
     transition: .2s ease-in;
     color: #d3d3d3;
 }
@@ -339,6 +354,21 @@ header nav ul li a:hover {
     }
 }
 
+.number-products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1rem;
+    border-radius: 50%;
+    height: 1rem;
+    font-size: .9rem;
+    padding: .4rem .4rem;
+    background-color: var(--bg-primary);
+    position: absolute;
+    top: -12px;
+    right: -10px;
+}
+
 /* Seccion footer */
 
 footer {
@@ -410,7 +440,11 @@ footer p {
 
     /* HEADER HOME */
 
-    header nav ul li a {
+    header .box {
+        width: 3rem;
+    }
+
+    header nav {
         display: none;
     }
 
