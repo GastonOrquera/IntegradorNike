@@ -415,12 +415,9 @@ header nav ul li a:hover {
         justify-content: center;
         border-radius: .2rem;
         margin-top: 1rem;
-    }
-
-    .btn-cart:hover {
-        color: var(--clr-black);
-        background-color: var(--clr-grey2);
-        border: 1px solid #11111144;
+        border-radius: 0;
+        border-bottom-left-radius: .2rem;
+        border-bottom-right-radius: .2rem;
     }
 
 }
