@@ -374,6 +374,7 @@ header nav ul li a:hover {
 .conteiner-cart {
 
     padding: 2rem;
+    height: 80vh;
 
     .box-cart {
         margin-top: 1rem;
