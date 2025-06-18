@@ -369,6 +369,61 @@ header nav ul li a:hover {
     right: -10px;
 }
 
+/* Seccion Cart */
+
+.conteiner-cart {
+
+    padding: 2rem;
+
+    .box-cart {
+        margin-top: 1rem;
+        width: max-content;
+        border: 1px solid rgba(0, 0, 0, 0.37);
+        letter-spacing: 1px;
+        border-radius: .2rem;
+        height: max-content;
+    }
+
+    .logo-cart {
+        margin-top: 1rem;
+    }
+
+    .box-logo {
+        display: flex;
+        justify-content: end;
+        padding-right: 1rem;
+    }
+
+    img {
+        width: 6rem;
+    }
+
+    .cart {
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+        margin-right: 1.2rem;
+    }
+
+    .btn-cart {
+        display: flex;
+        justify-content: center;
+        border-radius: .2rem;
+        margin-top: 1rem;
+    }
+
+    .btn-cart:hover {
+        color: var(--clr-black);
+        background-color: var(--clr-grey2);
+        border: 1px solid #11111144;
+    }
+
+}
+
 /* Seccion footer */
 
 footer {
@@ -537,6 +592,16 @@ footer p {
 
         h3 {
             font-size: 1.4rem;
+        }
+    }
+
+    /* Seccion Cart */
+
+    .conteiner-cart {
+        padding: 1rem;
+
+        .box-cart {
+            width: 100%;
         }
     }
 
