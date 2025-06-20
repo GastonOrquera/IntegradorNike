@@ -416,13 +416,81 @@ header nav ul li a:hover {
 
 footer {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    flex-direction: column;
+    gap: .6rem;
     padding: 2rem;
     background-color: var(--clr-black);
+    color: white;
+    margin-top: 1rem;
+
+    p {
+        color: var(--clr-grey2);
+        letter-spacing: 1px;
+        font-size: .9rem;
+    }
+
+    .a-p {
+        text-decoration: underline var(--bg-primary);
+        color: var(--clr-grey2);
+    }
+
+    .a-p:hover {
+        transition: .2s ease-in-out;
+        text-decoration: underline var(--clr-grey2);
+    }
+
+    .box-redes {
+
+        display: flex;
+
+        i {
+            font-size: 1.4rem;
+            cursor: pointer;
+        }
+
+        .bi-facebook,
+        .bi-youtube,
+        .bi-twitter-x {
+            margin-left: 1rem;
+        }
+
+        i:hover {
+            color: var(--clr-grey2);
+            transition: .2s ease-in-out;
+        }
+
+        input {
+            padding: .8rem .4rem;
+            outline: none;
+            border-radius: .4rem;
+            border: 1px solid var(--clr-grey2);
+            letter-spacing: 1px;
+            width: 50%;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .btn-footer {
+            background-color: var(--bg-primary);
+            color: white;
+            padding: .72rem 1rem;
+            border-radius: .2rem;
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 0;
+            border: 1px solid transparent;
+        }
+
+        .btn-footer:hover {
+            transition: .2s ease-in-out;
+            border: 1px solid var(--clr-grey2);
+            background-color: var(--clr-black);
+        }
+
+    }
+
 }
 
-footer .box {
+/* footer .box {
     display: flex;
     gap: 2rem;
 }
@@ -441,7 +509,7 @@ footer .box i:hover {
 footer p {
     color: #888888;
     letter-spacing: 1px;
-}
+} */
 
 /* MEDIA QUERIES */
 
@@ -599,7 +667,7 @@ footer p {
 
     /* Seccion footer */
 
-    footer {
+    /* footer {
         flex-direction: column;
         gap: 2rem;
         align-items: center;
@@ -607,7 +675,11 @@ footer p {
 
     footer .box i {
         font-size: 1.6rem;
+    } */
+
+    /* footer nuevo */
+
+    footer {
+        padding: 2rem 1rem;
     }
-
-
 }
