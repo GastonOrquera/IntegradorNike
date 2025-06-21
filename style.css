@@ -412,6 +412,85 @@ header nav ul li a:hover {
 
 }
 
+
+/* Seccion check out */
+
+.conteiner-check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    height: 80vh;
+
+
+    .box-check {
+        border-radius: .4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        border: 1px solid #11111144;
+        padding: 1rem;
+
+        .box {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            .bi-hand-thumbs-up {
+                color: rgb(17, 153, 17);
+                font-size: 1.4rem;
+            }
+
+            h3 {
+                font-size: 1.6rem;
+            }
+        }
+
+        .cart-check {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+
+            .box {
+                flex-direction: column;
+                align-items: start;
+            }
+        }
+
+        hr {
+            width: 100%;
+            border: 1px solid #11111144;
+        }
+
+        .monto {
+            justify-content: space-between;
+            font-size: 1.1rem;
+        }
+
+        /* p {
+            margin-top: 1rem;
+        } */
+
+        .btn-check {
+            padding: .6rem;
+            background-color: var(--bg-primary);
+            color: white;
+            text-align: center;
+            border-radius: .2rem;
+            border: 1px solid transparent;
+        }
+
+        .btn-check:hover {
+            transition: .2s ease-in-out;
+            border: 1px solid var(--bg-primary);
+            background-color: var(--clr-black);
+        }
+    }
+
+}
+
+
+
 /* Seccion footer */
 
 footer {
@@ -478,12 +557,14 @@ footer {
             border-bottom-left-radius: 0;
             border-top-left-radius: 0;
             border: 1px solid transparent;
+            border-left: none;
         }
 
         .btn-footer:hover {
             transition: .2s ease-in-out;
             border: 1px solid var(--clr-grey2);
             background-color: var(--clr-black);
+            border-left: none;
         }
 
     }
@@ -543,6 +624,10 @@ footer p {
     }
 
     .conteiner-cart {
+        padding: 1rem;
+    }
+
+    .conteiner-check {
         padding: 1rem;
     }
 }
