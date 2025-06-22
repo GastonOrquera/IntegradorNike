@@ -544,7 +544,7 @@ footer {
             border-radius: .4rem;
             border: 1px solid var(--clr-grey2);
             letter-spacing: 1px;
-            width: 50%;
+            width: 30%;
             border-top-right-radius: 0;
             border-bottom-right-radius: 0;
         }
@@ -750,21 +750,17 @@ footer p {
         }
     }
 
-    /* Seccion footer */
-
-    /* footer {
-        flex-direction: column;
-        gap: 2rem;
-        align-items: center;
-    }
-
-    footer .box i {
-        font-size: 1.6rem;
-    } */
-
-    /* footer nuevo */
+    /* footer*/
 
     footer {
         padding: 2rem 1rem;
+
+        .box-redes {
+            input {
+                width: 53%;
+            }
+        }
     }
+
+    .
 }
