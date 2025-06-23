@@ -758,7 +758,7 @@ footer p {
     /* HEADER HOME */
 
     header .box {
-        width: 3rem;
+        width: 2rem;
     }
 
     header nav {
@@ -873,17 +873,14 @@ footer p {
     /* producto zapatilla */
 
     .conteiner-product {
-
-        height: 100vh;
+        height: max-content;
         margin-bottom: 12rem;
 
         .box-product {
-
             flex-direction: column;
-            height: max-content;
 
             .img-product {
-                width: 22rem;
+                width: 100%;
             }
         }
     }
