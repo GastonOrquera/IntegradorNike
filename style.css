@@ -374,6 +374,9 @@ header nav ul li a:hover {
 .conteiner-cart {
 
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 80vh;
 
     .box-cart {
@@ -382,6 +385,7 @@ header nav ul li a:hover {
         border: 1px solid rgba(0, 0, 0, 0.37);
         letter-spacing: 1px;
         border-radius: .2rem;
+        width: 50%;
     }
 
     img {
