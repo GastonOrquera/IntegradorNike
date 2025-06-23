@@ -727,6 +727,8 @@ footer p {
         }
     }
 
+
+
     .section-products {
 
         padding: 1rem;
@@ -736,13 +738,13 @@ footer p {
             grid-template-columns: repeat(2, 1fr);
         }
 
+        .conteiner-mobile {
+            grid-template-columns: repeat(1, 1fr);
+        }
 
         img {
             height: 16rem;
         }
-
-
-
 
         h3 {
             font-size: 1.4rem;
@@ -753,8 +755,6 @@ footer p {
 
     .conteiner-cart {
         padding: 1rem;
-
-
 
         .box-cart {
             width: 100%;
