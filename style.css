@@ -501,6 +501,7 @@ header nav ul li a:hover {
     .conteiner-politica {
         border: 1px solid #11111144;
         max-width: 1200px;
+        border-radius: .4rem;
         padding: 2rem 4rem;
         display: flex;
         flex-direction: column;
@@ -674,15 +675,13 @@ footer p {
         padding: 1rem;
 
         .conteiner-politica {
-            padding: 2rem 2rem;
+            padding: 1rem;
         }
 
         img {
             margin-top: 2rem;
         }
     }
-
-
 
 }
 
