@@ -875,6 +875,7 @@ footer p {
     .conteiner-product {
 
         height: 100vh;
+        margin-bottom: 12rem;
 
         .box-product {
 
@@ -882,7 +883,7 @@ footer p {
             height: max-content;
 
             .img-product {
-                width: 18rem;
+                width: 22rem;
             }
         }
     }
