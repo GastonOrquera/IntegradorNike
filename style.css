@@ -169,9 +169,6 @@ header nav ul li a:hover {
     transition: .4s;
 }
 
-
-
-
 /* Seccion Main */
 
 /* .conteiner-main{
@@ -475,22 +472,23 @@ header nav ul li a:hover {
             margin-top: 1rem;
         } */
 
-        .btn-check {
-            padding: .6rem;
-            background-color: var(--bg-primary);
-            color: white;
-            text-align: center;
-            border-radius: .2rem;
-            border: 1px solid transparent;
-        }
-
-        .btn-check:hover {
-            transition: .2s ease-in-out;
-            border: 1px solid var(--bg-primary);
-            background-color: var(--clr-black);
-        }
     }
 
+}
+
+.btn-check {
+    padding: .6rem;
+    background-color: var(--bg-primary);
+    color: white;
+    text-align: center;
+    border-radius: .2rem;
+    border: 1px solid transparent;
+}
+
+.btn-check:hover {
+    transition: .2s ease-in-out;
+    border: 1px solid var(--bg-primary);
+    background-color: var(--clr-black);
 }
 
 /* Seccion politica de privacidad */
@@ -523,7 +521,45 @@ header nav ul li a:hover {
     }
 }
 
+/* Seccion productos zapatillas */
 
+.conteiner-product {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+
+    h2,
+    h3 {
+        letter-spacing: 1px;
+    }
+
+    .box-product {
+        display: flex;
+        border: 1px solid #11111144;
+        align-items: center;
+        gap: 1rem;
+        border-radius: .4rem;
+        padding: 2rem;
+        max-width: 1200px;
+        box-shadow: 0px 0px 10px 0px #11111144;
+
+        .img-product {
+            width: 36rem;
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            gap: .8rem;
+
+            ul li {
+                list-style: disc;
+                margin-left: 2rem;
+            }
+        }
+    }
+
+}
 
 
 
@@ -634,6 +670,10 @@ footer p {
 
     header {
         padding: 1rem 0;
+
+        .box {
+            margin-right: 1rem;
+        }
     }
 
     .sections-page {
@@ -685,6 +725,26 @@ footer p {
         img {
             margin-top: 2rem;
         }
+    }
+
+    .conteiner-product {
+        padding: 1rem;
+        justify-content: start;
+        height: 80vh;
+
+        .box-product {
+            padding: 1rem;
+            max-width: none;
+
+
+            .img-product {
+                width: 24rem;
+            }
+        }
+    }
+
+    footer {
+        padding: 1rem;
     }
 
 }
@@ -806,6 +866,24 @@ footer p {
 
         .box-cart {
             width: 100%;
+        }
+    }
+
+
+    /* producto zapatilla */
+
+    .conteiner-product {
+
+        height: 100vh;
+
+        .box-product {
+
+            flex-direction: column;
+            height: max-content;
+
+            .img-product {
+                width: 18rem;
+            }
         }
     }
 
