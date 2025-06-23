@@ -489,6 +489,37 @@ header nav ul li a:hover {
 
 }
 
+/* Seccion politica de privacidad */
+
+.conteiner-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+
+    .conteiner-politica {
+        border: 1px solid #11111144;
+        max-width: 1200px;
+        padding: 2rem 4rem;
+        display: flex;
+        flex-direction: column;
+        gap: .8rem;
+
+        li {
+            list-style: disc;
+            margin-left: 2rem;
+        }
+    }
+
+    img {
+        margin-top: 3rem;
+        width: 100%;
+    }
+}
+
+
+
 
 
 /* Seccion footer */
@@ -636,6 +667,20 @@ footer p {
         margin-top: 2rem;
     }
 
+    /* Seccion politica de privacidad */
+
+    .conteiner-p {
+
+        padding: 1rem;
+
+        .conteiner-politica {
+            padding: 2rem 2rem;
+        }
+
+        img {
+            margin-top: 2rem;
+        }
+    }
 
 
 
